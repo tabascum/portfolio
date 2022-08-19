@@ -114,6 +114,7 @@ main {
   }
 }
 
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -182,7 +183,7 @@ nav {
   justify-content: center;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 80%;
   background-color: transparent;
 }
 
@@ -202,6 +203,8 @@ button:hover {
     cursor: pointer;
     box-shadow: .0 .1em .1em #f63cff, .0 .0 .2em #f63cff;
 }
+
+
 
 .hero-img {
   background: transparent;
@@ -226,13 +229,14 @@ h1 {
 
 #modal {
   position: fixed;
-  top: 54%;
-  left: 70%;
-  transform: translate(-54%, -70%);
-  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 51%;
+  width: 80%;
   max-width: 90%;
   background-color: #f63cff;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   z-index: 10;
   box-shadow: 0.4em 0.4em 0.8em #190159;
@@ -249,7 +253,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: .1em solid #5700e3;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
@@ -268,11 +272,17 @@ h1 {
   top: 0;
 }
 
+.work {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .work-container{
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 55vh;
   color: #5bd4f2;
   align-items: center;
   justify-content: space-around;
@@ -282,21 +292,29 @@ h1 {
   text-align: center;
 }
 
+.work-title .fa-brands {
+  animation: none;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
   padding: 5em;
   height: 40vh;
   width: 80%;
 }
 
 .card {
-  margin: 1em;
   border-radius: 2em;
-  background-color: #7826f2;
-  box-shadow: 0.4em 0.4em 0.8em #190159;
-  height: 38vh;
   text-align: center;
+  margin: 0.5em 1em;
+}
+
+.card button {
+  padding: 0.6rem 1.2rem;
+  width: 20em;
 }
 
 .card a {
@@ -307,15 +325,148 @@ h1 {
 }
 
 .card img {
+  height: 80%;
   width: 100%;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
+  border-radius: 2em;
+  box-shadow: 0.4em 0.4em 0.8em #190159;
 }
 
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+.hero-img {
+  width: 80%;
+}
 
+.content {
+  text-align: center;
+  font-size: .8em;
+}
 
-} */
+.typed-out {
+  animation: none;
+}
+
+.links {
+  position: relative;
+  top: 2%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  height: 10em;
+  width: 20%;
+  gap: 1.5em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  font-size: .8em;
+  width: 10%;
+}
+
+.work-container {
+  margin-top: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.card {
+  width: 80%;
+  text-align: center;
+}
+
+.projects-grid button {
+  width: 90%;
+}
+
+.contact {
+  margin: -5em 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.form-body {
+  width: 90%;
+}
+
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  margin-top: 5vh;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+  color: #5bd4f2;
+}
+
+form {
+  width: 50%;
+  background-color: #190159;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.4em 0.4em 0.8em #5bd4f2;
+}
+
+.feedback-input {
+  color:#190159;
+  font-size: .9rem;
+  border-radius: .5rem;
+  line-height: .5rem;
+  border: .08rem solid #5bd4f2;
+  transition: all 0.3s;
+  padding: .8rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: #5bd4f2;
+  outline:0;
+}
+
+textarea {
+  height: 10vh;
+  line-height: 10%;
+  resize: none;
+}
+
+[type="submit"] {
+  font-family: sans-serif;
+  width: 100%;
+  background:#f63cff;
+  border-radius: .5rem;
+  border: 0;
+  cursor: pointer;
+  color: #190159;
+  font-size: 1.5rem;
+  padding: .8rem 0;
+  font-weight: 700;
+}
+
+[type="submit"]:hover { 
+  background:#5700e3; 
+  color: #f63cff; 
+}
 
 footer {
   font-size: .8em;
