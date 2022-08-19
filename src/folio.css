@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#190159, #5700e3);
+  align-items: center;
+}
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+  color: #f63cff;
+  display: flex;
+  justify-content: space-around;
+  z-index: 0;
+}
+
+.fa-css3 {
+  right: 10%;
+  position: absolute;
+  animation: techRun 3s linear infinite;
+}
+
+.fa-html5 {
+  right: 21%;
+  position: absolute;
+  animation: techRun 6s linear infinite;
+}
+.fa-square-js {
+  right: 32%;
+  position: absolute;
+  animation: techRun 4s linear infinite;
+}
+.fa-node-js {
+  right: 43%;
+  position: absolute;
+  animation: techRun 8s linear infinite;
+}
+.fa-git-alt {
+  right: 54%;
+  position: absolute;
+  animation: techRun 9s linear infinite;
+}
+.fa-react {
+  right: 65%;
+  position: absolute;
+  animation: techRun 10s linear infinite;
+}
+
+.fa-github-alt {
+  right: 76%;
+  position: absolute;
+  animation: techRun 7s linear infinite;
+}
+
+.fa-npm {
+  right: 87%;
+  position: absolute;
+  animation: techRun 5s linear infinite;
+}
+
+@keyframes techRun {
+  from {
+    top: -2em;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+main {
+  position: absolute;
+  top: 10vh;
+  left: 5%;
+  height: 80vh;
+  width: 90%;
+  background-color: #7826f2d5;
+  border-radius: 1.5em;
+  animation: flicker 4s alternate;
+  box-shadow: 0 0 7px #5bd4f2, 0 0 10px #5bd4f2, 0 0 42px #5bd4f2;
+  color: #190159;
+  z-index: 1;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 7px #5bd4f2, 0 0 10px #5bd4f2, 0 0 42px #5bd4f2;
+  }
+
+  5%,
+  20%,
+  24%,
+  55%,
+  70% {
+    box-shadow: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 1.5em 0 0;
+  gap: 1.5em;
+}
+
+.navbar-socials a {
+  color: #5bd4f2;
+  font-size: 2em;
+  text-shadow: 0.1em 0.1em 0.1em #190159;
+}
+
+.fa-brands:hover {
+  color: #f63cff;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  height: 55vh;
+  color: #5bd4f2;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 6em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.head {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid #190159;
+    white-space: nowrap;
+    animation: typing 4s steps(22, end) forwards, blink .5s infinite;
+    font-size: 1.6rem;
+    color: #190159;
+    margin-bottom: 1em;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 76% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #5bd4f2; }
+}
+
+.links {
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+    border: none;
+    color: #5bd4f2;
+    background: none;
+    margin: 0 1em;
+    font-size: 1.1em;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 .1em 0 #f63cff;
+}
+
+img {
+  background: transparent;
+  border-radius: 50%;
+  width: 25%;
+  box-shadow: 0.4em 0.4em 0.8em #190159;
+}
+
+
+/* @media only screen and (max-width: 1000px) {
+
+
+} */
+
+footer {
+  font-size: .8em;
+  text-align: center;
+  color: #5bd4f2;
+  top: 96vh;
+  position: relative;
+}
+
+footer a {
+  color: #5bd4f2;
+  text-decoration: none;
+}
+
+strong {
+  color: #f63cff;
+}
