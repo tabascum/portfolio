@@ -37,7 +37,7 @@
             </div>
         </nav>
         <section class="hero">
-            <img src="./src/images/vascodmarques-pic.png" alt="">
+            <img class="hero-img" src="./src/images/vascodmarques-pic.png" alt="">
             <div class="container">
                 <div class="content">
                     <p class="head">Hello, my name is <u>Vasco Marques</u></p>
@@ -49,23 +49,68 @@
         <section class="links">
             <div class="buttons">
                 <button id="home-btn" href="#">Home</button>
-                <button id="about-btn">About Me</button>
-<!--                 <div class="about">
-                    <body class="about-content">
-                        <h2>Who am I?</h2>
-                        <p>I'm a frontend web developer based in Lisbon, Portugal.</p>
-                        <p>Engaged with the projects I'm working with, I'm driven by curiosity and the aim to present the best results. </p>
-                        <p>If I'm not coding, I'll be probably reading or </p>
-                    </body>
-                </div> -->
+                <button id="open-modal" class="about">About</button>
+                <div id="fade" class="hide"></div>
+                <div id="modal" class="hide">
+                  <div class="modal-header">
+                    <h2>Who am I?</h2>
+                    <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                  </div>
+                  <div class="modal-body">
+                      <p>I'm a frontend web developer based in Lisbon, Portugal.</p>
+                      <p>Commited with the projects I'm working with, I'm driven by curiosity and the aim to present the best results. </p>
+                      <p>If I'm not coding, I'll be probably reading, learning new IT skills or travelling.</p>
+                  </div>
+                </div>
                 <button id="work-btn">Work</button>
                 <button id="contact-btn">Contact</button>
             </div>
         </section>
+        <section class="work">
+            <div class="work-container">
+                <div class="work-title">
+                  <h1>Projects</h1>
+                  <p>These are some of the projects I've been building</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="card">
+                        <img src="./src/images/landingpage.png" alt="">
+                        <h1>Landing Page</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/calc.png" alt="">
+                        <a href="https://tabascum.github.io/calculator/">Calculator Live</a>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/parallax.png" alt="">
+                        <a href="https://tabascum.github.io/parallax-effects/">Parallax Page</a>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/todo.png" alt="">
+                        <a href="https://tabascum.github.io/to-do-app/">To Do App</a>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/avoid-game.png" alt="">
+                        <a href="https://tabascum.github.io/avoid-the-bush-game/">Game: Avoid the Bush
+                    </div>
+                </div>
+              </div>
+        </section>
+<!--         <section class="contact">
+            <div class="contact-form">
+                <div class="form">
+                  <h2>Projects</h2>
+                  <p>These are some of the projects I've been building</p>
+                </div>
+                <div class="form-body">
+
+                </div>
+              </div>
+        </section> -->
     </main>
     <footer>
           <p>
-            <strong>tabascum.io</strong> page by <a href="https://github.com/tabascum">Vasco Marques</a>
+            <strong>tabascum.io</strong> by <a href="https://github.com/tabascum">Vasco Marques</a>
           </p>
         </div>
       </footer>
