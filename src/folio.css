@@ -188,20 +188,20 @@ nav {
 }
 
 button {
-    border: none;
-    color: #5bd4f2;
-    background-color: #5700e3;
-    padding: 0.6rem 1.2rem;
-    width: 8em;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 1em;
-    box-shadow: 0.1em 0.1em 0.1em #190159;
+  border: none;
+  color: #5bd4f2;
+  background-color: #5700e3;
+  padding: 0.6rem 1.2rem;
+  width: 8em;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: .5em;
+  box-shadow: 0.1em 0.1em 0.1em #190159;
+  text-decoration: none;
 }
 
 button:hover {
     cursor: pointer;
-    box-shadow: .0 .1em .1em #f63cff, .0 .0 .2em #f63cff;
 }
 
 
@@ -312,23 +312,25 @@ h1 {
   margin: 0.5em 1em;
 }
 
-.card button {
-  padding: 0.6rem 1.2rem;
-  width: 20em;
-}
-
 .card a {
+  border: none;
   color: #5bd4f2;
+  background-color: #5700e3;
+  padding: 0.6rem 1.2rem;
+  width: 8em;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: .5em;
+  box-shadow: 0.1em 0.1em 0.1em #190159;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5em;
 }
 
 .card img {
   height: 80%;
   width: 100%;
-  border-radius: 2em;
+  border-radius: 1em;
   box-shadow: 0.4em 0.4em 0.8em #190159;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 900px) {
@@ -425,9 +427,9 @@ h1 {
 form {
   width: 50%;
   background-color: #190159;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0.4em 0.4em 0.8em #5bd4f2;
+  padding: 1.5rem 1rem;
+  border-radius: 1em;
+  box-shadow: 0.4em 0.4em 0.8em #190159;
 }
 
 .feedback-input {
