@@ -410,6 +410,13 @@ h1 {
 
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact {
   display: flex;
   align-items: center;
