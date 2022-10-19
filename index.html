@@ -7,129 +7,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, Bulma, JavaScript">
     <meta name="author" content="Vasco Marques">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/head/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/headfavicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/headfavicon-16x16.png">
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Font -->
     <link href="https://api.fontshare.com/v2/css?f[]=quicksand@600,700,400,500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./src/style.css">
-    <title>tabascum.io</title>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./src/responsive.css">
+    <title>Vasco Marques Web Developer</title>
+    <script src="./src/script.js" defer></script>
 </head>
 
 <body>
-    <header class="header" id="home">
-        <h1>VM</h1>
-        <nav class="headerAnchors">
-            <a class="headerBtn homeBtn" href="#home">Home</a>
-            <a class="headerBtn aboutBtn" href="#about">About</a>
-            <a class="headerBtn workBtn" href="#work">Work</a>
-            <a class="headerBtn contactBtn" href="#contact">Contact</a>
+    <header id="home">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>VM</h1>
+                <a href="#" class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="navbar-links">
+                <a class="headerBtn" href="#home">Home</a>
+                <a class="headerBtn" href="#about">About</a>
+                <a class="headerBtn" href="#work">Work</a>
+                <a class="headerBtn" id="contactBtn" href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
-    <section class="hero">
-        <div class="heroContainer">
-            <div class="heroContent">
+    <main>
+        <section class="hero">
+            <div class="hero-container">
                 <p>Hi, I am</p>
-                <h3 class="heroTitle">VASCO MARQUES</h3>
-                <h1 class="heroText typedOut">FRONTEND WEB DEVELOPER</h1>
+                <h3>VASCO MARQUES</h3>
+                <h1 class="typed-out">FRONTEND WEB DEVELOPER</h1>
             </div>
-        </div>
-    </section>
-    <main class="mainContainer">
-        <section class="aboutContainer" id="about">
+        </section>
+        <section id="about">
             <figure>
-                <img class="aboutImg" src="./src/images/profile.png" alt="personal picture">
+                <img class="profile-image" src="./src/images/profile.png" alt="personal picture">
             </figure>
-            <article class="aboutContent">
-                <div class="aboutDescription">
-                    <h1 class="aboutDescriptionTitle">WHO AM I?</h1>
-                    <p>I'm a front-end web developer based in Lisbon, Portugal.</p>
-                    <p>Commited with the projects I'm working with, I'm driven by curiosity and the aim to present the
-                        best results.</p>
-                    <p>If I'm not coding, I'll probably be reading, listening to music, learning new IT skills or
-                        travelling.</p>
-                    <p>Want to know more? Check out my <em>projects</em></p>
+            <article class="about-content">
+                <div>
+                    <h1 class="headers">WHO AM I?</h1>
+                </div>
+                <p>I'm a front-end web developer based in Lisbon, Portugal.</p>
+                <p>Commited with the projects I'm working with, I'm driven by curiosity and the aim to present the
+                    best results.</p>
+                <p>If I'm not coding, I'll probably be reading, listening to music, learning new IT skills or
+                    travelling.</p>
+                <p>Want to know more? Check out my <em>projects</em></p>
                 </div>
             </article>
         </section>
-        <section class="workSection" id="work">
-            <div class="workContainerTitle">
-                <h1 class="workTitle">PROJECTS</h1>
+        <section id="work">
+            <div>
+                <h1 class="headers">PROJECTS</h1>
                 <p>Here are some of the projects I've built</p>
             </div>
-            <div class="workContainer" id="workContainer">
-                <div class="workGrid">
-                    <div class="workGridCard">
-                        <img class="workGridCardImg" src="./src/images/calc.webp" alt="calculator image">
-                        <a class="workGridLinks" href="https://tabascum.github.io/calculator/">Calculator <i
-                                class="fa-brands fa-github"></i></a>
+            <article>
+                <div class="work-tiles">
+                    <div class="work-card">
+                        <a href="https://tabascum.github.io/calculator/" target="_blank"><img class=""
+                                src="./src/images/projects/calculator.webp" alt="calculator image">Calculator <i
+                                class="fa-solid fa-eye"></i></a>
                         </a>
                     </div>
-                    <div class="workGridCard">
-                        <img class="workGridCardImg" src="./src/images/parallax.webp"
-                            alt="parallax effect project image">
-                        <a class="workGridLinks" href="https://tabascum.github.io/parallax-effects/">Business Landing
-                            Page<i class="fa-brands fa-github"></i></a>
+                    <div class="work-card">
+                        <a href="https://tabascum.github.io/parallax-effects/" target="_blank"><img class=""
+                                src="./src/images/projects/landing-parallax.webp"
+                                alt="parallax effect project image">Parties Page <i class="fa-solid fa-eye"></i></i></a>
                         </a>
                     </div>
-                    <div class="workGridCard">
-                        <img class="workGridCardImg" src="./src/images/todo.webp" alt="todo app image">
-                        <a class="workGridLinks" href="https://tabascum.github.io/to-do-app/">To Do App <i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-                    <div class="workGridCard">
-                        <img class="workGridCardImg" src="./src/images/avoid-game.webp" alt="avoid the bush game image">
-                        <a class="workGridLinks" href="https://tabascum.github.io/avoid-the-bush-game/">Game: Avoid the
-                            Bush <i class="fa-brands fa-github"></i></a>
+                    <div class="work-card">
+                        <a href="https://tabascum.github.io/newbarberlandingpage/" target="_blank"><img class=""
+                                src="./src/images/projects/barber-landing-page.webp"
+                                alt="avoid the bush game image">Barber Page <i class="fa-solid fa-eye"></i></a>
                         </a>
                     </div>
-                    <div class="workGridCard">
-                        <a class="workGridLinks" href="#">Work in Progress</a>
+                    <div class="work-card">
+                        <a href="https://tabascum.github.io/sign-in-form-page/" target="_blank"><img class=""
+                                src="./src/images/projects/sign-up-page.webp" alt="sign in form page">Sign up
+                            form <i class="fa-solid fa-eye"></i></i></a>
+                    </div>
+                    <div class="work-card">
+                        <a href="https://tabascum.github.io/avoid-the-bush-game/" target="_blank"><img class=""
+                                src="./src/images/projects/avoid-the-bush.webp" alt="avoid the bush game image">Game <i
+                                class="fa-solid fa-eye"></i></a>
+                        </a>
+                    </div>
+                    <div class="work-card">
+                        <a href="#">Work in Progress</a>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
-        <section class="contactContainer" id="contact">
-            <div class="contactForm">
-                <div class="contactFormTitles">
-                    <h1 class="contactTitle">CONTACT</h1>
-                    <p>Want to have more details? Want to say someting?</p>
-                    <p>Feel free to send me a message</p>
-                    <br>
-                    <ul class="contactSocials">
-                        <li>
-                            <a class="socialIcons" href="https://github.com/tabascum"><i
-                                    class="fa-brands fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a class="socialIcons" href="https://linkedin.com/in/vascodmarques"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a class="socialIcons" href="tabascum#8202"><i class="fa-brands fa-discord"
-                                    id="discord"></i></a>
-                        </li>
-                    </ul>
+        <section id="contact">
+            <article>
+                <div class="contact-text">
+                    <div>
+                        <h1 class="headers">CONTACT</h1>
+                        <p>Want to have more details? Want to say someting?</p>
+                        <p>Feel free to send me a message</p>
+                        <br>
+                    </div>
+                    <div class="contact-media">
+                        <a href="https://github.com/tabascum" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vascodmarques" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="tabascum#8202"><i class="fa-brands fa-discord" id="discord"></i></a>
+                    </div>
                 </div>
-                <form class="formBody" action="mailto:marques_vasco@yahoo.es" method="POST" enctype="text/plain"
-                    name="EmailForm">
-                    <label for="name" type="placeholder">name</label>
-                    <input name="name" type="text" class="feedbackInput" required />
-                    <label for="email" type="placeholder">email</label>
-                    <input name="email" type="text" class="feedbackInput" required />
+                <form action="#" method="POST" enctype="text/plain" name="EmailForm">
+
+                    <label for="name" type="placeholder" id="name-label">name</label>
+                    <input name="name" type="text" class="input" id="name" required />
+
+
+                    <label for="email" type="placeholder" id="email-label">email</label>
+                    <input name="email" type="text" class="input" id="email" required />
+
+
                     <label for="name" type="placeholder">message</label>
-                    <textarea name="text" class="feedbackInput" maxlength="250" required></textarea>
-                    <input type="submit" value="send" />
+                    <textarea name="text" class="input" maxlength="250" required></textarea>
+
+                    <button type="submit">send</button>
                 </form>
-            </div>
+            </article>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <p>
-            <strong>tabascum.io</strong> &#169; by Vasco Marques &#183; All rights reserved</a>
+            <strong>Portfolio Page</strong> &#169; made by Vasco Marques &#183; 2022 All rights reserved
         </p>
     </footer>
-    <script src="./src/script.js"></script>
 </body>
 
 </html>
