@@ -83,8 +83,8 @@
   }
 
   .hero-container {
-    font-size: 3vw;
-    padding: 4rem;
+    font-size: 4vw;
+    padding: 1rem;
   }
 
   #about {
@@ -96,13 +96,6 @@
   }
 
   #contact > article {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .hero-container {
-    font-size: 3vw;
     padding: 2rem;
   }
 }
